@@ -1,0 +1,80 @@
+
+/* google-font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+}
+/* header-part */
+.top-banner{
+    background-color: #2D25A0;   
+}
+.top-banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 0 40px 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    
+    
+    
+}
+/* -------------
+    text-part 
+-----------*/
+.text-part h1{
+        font-weight: 700;
+        font-size: 55px;
+        color: #FFFF;
+}
+button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+button a{
+    text-decoration: none;
+    color: #FFFF;
+    font-weight:700;
+}
+button span{
+    color: #ffff;
+    width: 16px;
+    height: 14px;
+    margin-left: 8px;
+}
+/* ------------
+banner-parts
+---------- */
+.banner-part img{
+    width: 100%;
+    height: 100%;
+}
+/* Playerblogs-part */
+.All-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.top-player{
+    margin-top: 20px;
+}
+.singel-player{
+    box-shadow: 0px 0px  30px #ddd;
+    padding: 15px;
+
+}
+.singel-player img{
+    width: 100%;
+}
+.singel-player h1{
+    font-family: 700;
+    font-size: 25px;
+}
+.singel-player p{
+    color: #6C6C6C;
+    font-size: 13px;
+}
