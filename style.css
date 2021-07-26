@@ -7,35 +7,39 @@ body{
 
     margin: 0;
 }
-/* header-part */
-.top-banner{
-    background-color: #2D25A0;   
-}
-.top-banner .containe{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 50px 0 40px 0;
-}
 .container{
     width: 80%;
-    margin: auto;
-    
-    
-    
+    margin: auto;    
 }
+/* header-part */
+.top-header{
+    background-color: #2D25A0;   
+}
+.top-header .container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
 /* -------------
     text-part 
 -----------*/
-.text-part h1{
+.top-header-text{
         font-weight: 700;
         font-size: 55px;
         color: #FFFF;
+}
+.top-header-text h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height:80px;
 }
 button{
     background-color: #E02C6D;
     padding: 10px 24px;
     border: 0;
     border-radius: 30px;
+    cursor: pointer;
+    transition:1s;
 }
 button:hover {
     width: 150px;
@@ -55,9 +59,9 @@ button span{
 /* ------------
 banner-parts
 ---------- */
-.banner-part img{
+.top-header-image img{
     width: 100%;
-    height: 100%;
+    margin-top: 100px;
 }
 /* Playerblogs-part */
 .All-player{
@@ -84,27 +88,6 @@ banner-parts
     color: #6C6C6C;
     font-size: 13px;
 }
-
-/* Footer-section */
-
-.footer-section{
-    text-align: center;
-    padding: 50px 0;
-}
-.logo img{
-    width: 40%;
-}
-.footer-icon{
-    margin-left: 10px;
-}
-.footer-icon i{
-    color: gray;
-    margin-right: 20px;
-    background-color: rgba(128, 128, 128, 0.329);
-    padding: 7px;
-    border-radius:50%;
-    
-}
 /* fixture */
 .fixture-section{
     background: #061d48;
@@ -123,9 +106,12 @@ banner-parts
 .text-fixture p{
     color: #ffff;
 }
+.fixture img{
+    width:100%;
+}
 /* coaches */
 .coach-section{
-    background-image: url(./image/top-banner.png);
+    background-image: url(./image/bannerr.png);
     background-repeat: no-repeat;
     padding: 60px 0;
     margin-top: 30px;
@@ -154,3 +140,63 @@ banner-parts
     
 
 }
+
+
+/* Footer-section */
+
+.footer-section{
+    text-align: center;
+    padding: 50px 0;
+}
+.logo img{
+    width: 40%;
+}
+.footer-icon{
+    margin-left: 10px;
+}
+.footer-icon i{
+    color: gray;
+    margin-right: 20px;
+    background-color: rgba(128, 128, 128, 0.329);
+    padding: 7px;
+    border-radius:50%;
+}
+    
+/* =============================================
+==================Responcib====================== */
+@media only screen and (max-width:594px){
+    .top-header{
+        height: auto;
+    }
+    .top-header .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top-header-text{
+        margin-top: 40px;  
+    } 
+    .top-header-image img{ 
+        margin-top: 10px;
+    }
+    .top-header-text h1{
+        font-size: 24px; 
+        line-height:40px;
+    }
+ /* player-section */
+ .All-player{
+     grid-template-columns:repeat(1,1fr) ;
+
+ }
+ .fixture{
+    grid-template-columns:repeat(1,1fr) ;
+ }
+ .fixture-img{
+     width:100%;
+ }
+ .coaches{
+    grid-template-columns:repeat(1,1fr) ;
+ }
+
+}
+
+
+
